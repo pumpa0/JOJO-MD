@@ -2,12 +2,12 @@
   "wait": "_Tunggu Sebentar Yah Kak, Sedang di Proses Nih!_",
   "error": {
     "Iv": "Berikan Link Yang Sesuai Dengan Command",
-    "api": "Maaf, Fitur Sedang Eror!, Cobalah Lagi"
+    "api": "Maaf, Fitur Sedang Eror!"
   },
   "OnlyGrup": "Perintah Ini Hanya Untuk Grup",
   "OnlyPM": "Perintah ini hanya Untuk Di Private Message",
   "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup",
   "BotAdmin": "Bot Harus menjadi admin",
-  "OnlyOwner": "Kamu Bukan Pemilik Bot Ini, Command Ini Khusus Pemilik Aku:(",
+  "OnlyOwner": "Command Ini Khusus Owner",
   "OnlyPrem": "Perintah Ini Khusus Member Premium Kak, Upgrade Fitur Premium ketik !owner dan chat owner untuk upgrade premium"
 }
