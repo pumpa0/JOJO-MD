@@ -339,7 +339,7 @@ if (chats.startsWith("woy")){
 			  conn.sendMessage(from, { audio: fs.readFileSync('audio/WindahBengsin.m4a'), mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
-conn.sendMessage(from, { caption: teks, image: {url: `https://telegra.ph/file/7b927d601b6c7496d01ef.jpg`}, templateButtons: buttonsDefault, footer: '© HanBotz', mentions: [sender]} )
+conn.sendMessage(from, { caption: teks, image: {url: `https://telegra.ph/file/2ccdf8db25ccc78e75df8.jpg`}, templateButtons: buttonsDefault, footer: '© HanBotz', mentions: [sender]} )
 				break
 case prefix+'donasiah':
   reply(`Jika Ingin Donasi Harap Hubungi Owner\n\nhttps://wa.me/6285731855426`)
@@ -410,7 +410,7 @@ case prefix+'infobot':
 *Status :* Aktif
 *Aktif Selama :* ${runtime(process.uptime())}
 
-conn.sendMessage(from, {caption: caption, image: {url: `https://telegra.ph/file/7b927d601b6c7496d01ef.jpg`}}, {quoted: msg})
+conn.sendMessage(from, {caption: caption, image: {url: `https://telegra.ph/file/2ccdf8db25ccc78e75df8.jpg`}}, {quoted: msg})
 break
 			/*case prefix+'donate':
 			case prefix+'donasi':
