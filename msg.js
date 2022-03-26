@@ -40,8 +40,8 @@ const ikiapi = "FuckBitch"
 const gopay = "0858-0714-9213"
 const ovo = "0857-3185-5426"
 const dana = "0857-3185-5426"
-const pulsa = "0858-0714-9213"
-const pulsa2 = "0857-3185-5426"
+const pulsa = "0857-3185-5426"
+const pulsa2 = "0858-0714-9213"
 const ig = "terserah_bomat"
 
 // Exif
@@ -235,14 +235,15 @@ module.exports = async(conn, msg, m, setting) => {
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6285731855426` } },
 		const buttonsDefault = [
 			{ urlButton: { displayText: `GRUP HANBOTZ`, url : `https://chat.whatsapp.com/IKcqBMcirblBbc9SqpKuPu` } },
+			{ urlButton: { displayText: `Youtube Channel`, url : `https://youtube.com/channel/UCZzt-Qw0zTYc8UP-LL2G5fA` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Pemilik Bot`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `Info Bot`, id: `${prefix}infobot` } },
 		]
 		const button5 = [
 			{ callButton: { displayText: `Number Owner`, phoneNumber: `0857-3185-5426` } },
-			{ urlButton: { displayText: `Grup HanBotz`, url : `https://chat.whatsapp.com/IKcqBMcirblBbc9SqpKuPu` } },
-			{ quickReplyButton: { displayText: `Back To Menu `, id: `${prefix}menu` } },
+			{ urlButton: { displayText: `Group HanBotz`, url : `https://chat.whatsapp.com/IKcqBMcirblBbc9SqpKuPu` } },
+			{ quickReplyButton: { displayText: `Back To Menu 🔙`, id: `${prefix}menu` } },
 		]
         
 		const isImage = (type == 'imageMessage')
@@ -275,7 +276,7 @@ module.exports = async(conn, msg, m, setting) => {
 		    tebakgambar.splice(getGamePosi(from, tebakgambar), 1)
 		  }
 		}
-if (chats.startsWith("@6288213292687")){
+if (chats.startsWith("@6285807149213")){
    conn.sendMessage(from, { audio: {url : `https://d.top4top.io/m_22231oj7h1.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 }
 if (chats.startsWith("eh")){
@@ -284,7 +285,7 @@ if (chats.startsWith("eh")){
 if (chats.startsWith("Eh")){
    conn.sendMessage(from, { audio: {url : `https://b.top4top.io/m_2223iin241.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 }
-if (chats.startsWith("Jojo")){
+if (chats.startsWith("Jojooo")){
    conn.sendMessage(from, { audio: {url : `https://d.top4top.io/m_22231oj7h1.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 }
 if (chats.startsWith("woy")){
@@ -336,6 +337,7 @@ if (chats.startsWith("woy")){
 			// Main Menu
 			case prefix+'menu':
 			case prefix+'help':
+			  conn.sendMessage(from, { audio: fs.readFileSync('audio/WindahBengsin.m4a'), mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
 conn.sendMessage(from, { caption: teks, image: {url: `https://telegra.ph/file/2ccdf8db25ccc78e75df8.jpg`}, templateButtons: buttonsDefault, footer: '© HanBotz', mentions: [sender]} )
@@ -382,7 +384,9 @@ _Yakin kamu mau daftar ke premium?_
 - Transfer Limit Game
 
 *LIST DAFTAR PREMIUM*
-- Rp.10.000 - Perbulan`
+- Rp.10.000 - Perbulan
+- Rp.25.000 - Dua Bulan
+- Rp.50.000 - Lima Bulan`
 			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync(setting.pathimg) }, templateButtons: button5, footer: '© HanBotz', mentions: [sender] })
 			    break
 			case prefix+'runtime':
@@ -401,14 +405,14 @@ case prefix+'infobot':
     case prefix+'info':
       var caption = `*[ INFO HANBOTZ ]*
 
-*Nama Bot :* HanBotz
-*Name Owner :* Han
+*Nama Bot :* Jojo
+*Name Owner :* Arasya
 *Nomor Bot :* wa.me/6285807149213
 *Nomor Owner :* wa.me/6285731855426
 *Engine :* NodeJs
 *Status :* Aktif
 *Aktif Selama :* ${runtime(process.uptime())}
-
+`
 conn.sendMessage(from, {caption: caption, image: {url: `https://telegra.ph/file/2ccdf8db25ccc78e75df8.jpg`}}, {quoted: msg})
 break
 			/*case prefix+'donate':
@@ -420,7 +424,7 @@ break
   ├─ ❏ OVO
   ├─ ❏ 088213292687
   ├─ ❏ PULSA
-  ├─ ❏ 081319944917
+  ├─ ❏ 085731855426
   ├─ ❏ PULSA2
   ├─ ❏ 088213292687
   ├─ ❏ INSTAGRAM
@@ -1077,7 +1081,7 @@ Cek Pintar : ${pinter}%
 Menyukai : ${gai}
   `
 var but = [{buttonId: '/y', buttonText: { displayText: 'Cocok' }, type: 1 }, {buttonId: '/n', buttonText: { displayText: 'Gak Cocok' }, type: 1 }]
-					conn.sendMessage(from, { caption: cek, image: { url: `https://telegra.ph/file/a48660964fc598016dc71.png` }, buttons: but, footer: '© HanBotz' }, { quoted: msg })
+					conn.sendMessage(from, { caption: cek, image: { url: `https://telegra.ph/file/a48660964fc598016dc71.png` }, buttons: but, footer: '© HanBotzBot' }, { quoted: msg })
 				    limitAdd(sender, limit)
 				    break
 case prefix+'y':
@@ -1087,7 +1091,7 @@ case prefix+'n':
   reply("Yah Maaf Ya kak:(")
   break
 case prefix+'sc':
-  reply("mau ngapain 🤨")
+  reply("https://github.com/GetSya/JOJO-MD")
   break
 case prefix+'apakah':
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
@@ -1372,7 +1376,7 @@ case prefix+'add':
                 break
 			case prefix+'transfer':
             case prefix+'tf':{
-                 if (args.length < 2) return reply(`Kirim perintah *${command}* @tag nominal\nContoh : ${command} @6288213292687 2000`)
+                 if (args.length < 2) return reply(`Kirim perintah *${command}* @tag nominal\nContoh : ${command} @6285807149213 2000`)
                  if (mentioned.length == 0) return reply(`Tag orang yang ingin di transfer balance`)
                  if (!args[2]) return reply(`Masukkan nominal nya!`)
                  if (isNaN(args[2])) return reply(`Nominal harus berupa angka!`)
@@ -1850,7 +1854,7 @@ case prefix+'wiki':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
     reply(mess.wait)
      var data = await fetchJson(`https://hadi-api.herokuapp.com/api/wiki?query=${q}`)
-    var captionnya = `${data.result}\n\n${readmore} *© HanBotz*`
+    var captionnya = `${data.result}\n\n${readmore} *© HanBotzBOT*`
     conn.sendMessage(from, {caption: captionnya, image: {url: `https://telegra.ph/file/b4a72e6438af9770300eb.jpg`}}, {quoted: msg})
     limitAdd(sender, limit)
     break
@@ -1859,7 +1863,7 @@ case prefix+'igstalk':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
     if (args.length < 2) return reply(`Kirim perintah ${command} Username\nContoh : ${command} sofunsyabi.jpg`)
     var data = await fetchJson(`https://hardianto.xyz/api/igstalk?username=${q}&apikey=hardianto`)
-    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *© HanBotz*`
+    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *© HanBotzBOT*`
     conn.sendMessage(from, {caption: caption, image: {url: data.thumbnail}}, {quoted: msg})
     limitAdd(sender, limit)
     break
@@ -1899,7 +1903,7 @@ case prefix+'cersex':
   if (!isPremium)return reply("Perintah Ini Khusus Pengguna Premium, Upgrade Fitur Premium Ke Owner, Ketik !owner")
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
   var data = await fetchJson(`https://docs-jojo.herokuapp.com/api/cersex`)
-  var caption = `*[ CERSEX ]*\n\n*Judul* : ${data.result.judul}\n*Cerita* : ${data.result.cersex}\n${readmore} *HANBOTZ*`
+  var caption = `*[ CERSEX ]*\n\n*Judul* : ${data.result.judul}\n*Cerita* : ${data.result.cersex}\n${readmore} *HanBotz*`
   conn.sendMessage(from, {caption: caption, image: {url: data.result.img}}, {quoted: msg})
   limitAdd(sender, limit)
   break
