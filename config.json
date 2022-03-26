@@ -4,7 +4,7 @@
   "botName": "HanBotz",
   "sessionName": "session",
   "pathimg": "./media/Lycho.jpg",
-  "gamewaktu": 90,
+  "gamewaktu": 60,
   "limitCount": 20,
   "gcount": {
 	"prem": 100,
