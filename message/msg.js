@@ -37,12 +37,12 @@ const jojoapi = "Syaa"
 const ikiapi = "FuckBitch"
 
 // Setting Donasi
-const gopay = "0882-1329-2687"
-const ovo = "0813-1994-4917"
-const dana = "0813-1994-4917"
-const pulsa = "0813-1994-4917"
-const pulsa2 = "0882-1329-2687"
-const ig = "sofunsyabi.jpg"
+const gopay = "0858-0714-9213"
+const ovo = "0857-3185-5426"
+const dana = "0857-3185-5426"
+const pulsa = "0858-0714-9213"
+const pulsa2 = "0857-3185-5426"
+const ig = "terserah_bomat"
 
 // Exif
 const Exif = require("../lib/exif")
