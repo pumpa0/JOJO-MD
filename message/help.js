@@ -33,11 +33,10 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
 	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
 	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
 	Balance : $${toCommas(getBalance(sender, balance))}
-  Note : Anggap _<>_ *Tidak Ada*
   
   _Ada Bug? Ketik ${prefix}report Bug mu_
   ${readmore}
-  *( 📍 )  Main Menu*
+  *Main Menu*
   ≻ ${prefix}menu
   ≻ ${prefix}owner
   ≻ ${prefix}donasi
@@ -48,12 +47,12 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}jo <Text>
   ≻ ${prefix}simi <Text>
 
-  *( ✏️ )  Converter/Tools*
+  *Converter/Tools*
   ≻ ${prefix}stiker <ReplyGambar/Caption>
   ≻ ${prefix}toimg <ReplyStiker>
   ≻ ${prefix}tovid <ReplyStiker>
 
-  *( ⌛ )  Downloader*
+  *Downloader*
   ≻ ${prefix}play <Querry>
   ≻ ${prefix}tiktok <LinkTt>
   ≻ ${prefix}tiktokaudio <LinkTt>
@@ -64,33 +63,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}instagram <LinkIg>
   ≻ ${prefix}facebook <LinkFb>
   
-  *( ♻️ )  Random Menu*
-  ≻ ${prefix}quote
-  ≻ ${prefix}cecan
-  ≻ ${prefix}cogan
-  ≻ ${prefix}naruto
-  ≻ ${prefix}loli
-  ≻ ${prefix}waifu
-  ≻ ${prefix}husbu
-  ≻ ${prefix}yaoi
-  
-  *( 📛 ) Nsfw User Free*
-  ≻ ${prefix}hentai
-  
-  *( ⚠️ )  Premium User*
-  ≻ ${prefix}ass
-  ≻ ${prefix}bdsm
-  ≻ ${prefix}ahegao
-  ≻ ${prefix}cuckold
-  ≻ ${prefix}blowjob
-  ≻ ${prefix}cum
-  ≻ ${prefix}ero
-  ≻ ${prefix}femdom
-  ≻ ${prefix}foot
-  ≻ ${prefix}gangbang
-  ≻ ${prefix}xnxx <Link>
-  
-  *( 🎨 )  Menu Maker*
+  *Menu Maker*
   ≻ ${prefix}glitch <Text> <Text>
   ≻ ${prefix}flaming <Text>
   ≻ ${prefix}shadow <Text>
@@ -117,7 +90,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}logowolf2 <Text>
   ≻ ${prefix}thunder <Text>
   
-  *( 🍻 )  Maker From Image*
+  *Maker From Image*
   ≻ ${prefix}maker1 <Text>
   ≻ ${prefix}maker2 <Text>
   ≻ ${prefix}maker3 <Text>
@@ -129,7 +102,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}maker9 <Text>
   ≻ ${prefix}maker10 <Text>
   
-  *( 🪀 )  Menu Lain Nya*
+  *Menu Lain Nya*
   ≻ ${prefix}shortlink <Link>
   ≻ ${prefix}ssweb <Link>
   ≻ ${prefix}ssdesktop <Link>
@@ -149,25 +122,25 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}readmore <Text>|<Text>
   ≻ ${prefix}hitungmundur 12 10 2022
 
-  *( ☪️ )  Islamic Menu*
+  *Islamic Menu*
   ≻ ${prefix}quran <nomer>
   ≻ ${prefix}quranaudio <surah> <ayat>
   ≻ ${prefix}listquran <nomer>
   ≻ ${prefix}kisahnabi <Nama Nabi>
 
-  *( ✍️ )  Menu Tulis*
+  *Menu Tulis*
   ≻ ${prefix}nuliskanan <Text>
   ≻ ${prefix}nuliskiri <Text>
   ≻ ${prefix}foliokanan <Text>
   ≻ ${prefix}foliokiri <Text>
   
-  *( 🔎 )  Search Menu*
+  *Search Menu*
   ≻ ${prefix}lirik <Judul>
   ≻ ${prefix}grupwa <Pencarian>
   ≻ ${prefix}ytsearch <Pencarian>
   ≻ ${prefix}pinterest <Querry>
   
-  *( 🎮 )  Game & Fun Menu*
+  *Game & Fun Menu*
   ≻ ${prefix}tictactoe @tag
   ≻ ${prefix}delttc
   ≻ ${prefix}suit
@@ -186,7 +159,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}cekme
   ≻ ${prefix}react <Emoji>
   
-  *( 🏦 )  Payment & Bank*
+  *Payment & Bank*
   ≻ ${prefix}buylimit <Jumlah>
   ≻ ${prefix}buyglimit <Jumlah>
   ≻ ${prefix}transfer @tag <jumlah>
@@ -194,7 +167,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}balance
   ≻ ${prefix}topbalance
 
-  *( 👥 )  Group Menu*
+  *Group Menu*
   ≻ ${prefix}linkgrup
   ≻ ${prefix}setppgrup
   ≻ ${prefix}setnamegc
@@ -205,7 +178,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}kick <@tag>
   ≻ ${prefix}add <@tag>
   
-  *( 🧑🏻‍💻 )  Owner Menu*
+  *Owner Menu*
   > evalcode
   x evalcode-2
   $ executor
@@ -213,14 +186,5 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}exif
   ≻ ${prefix}leave
   ≻ ${prefix}addprem
-  ≻ ${prefix}delprem
-
-  *THANKS TO*
-  - Allah SWT
-  - Baileys-Md (Adiwa Jshing)
-  - @yannnnn.zz_ (Riyan)
-  - @sofunsyabi.id (Arasya)
-  - M Hadi Firmansya (Hadi Api)
-  - @melcanz_ (Amel)
-  - @hardianto.xyz (Anto)`
+  ≻ ${prefix}delprem`
 }
