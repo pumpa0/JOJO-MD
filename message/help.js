@@ -30,8 +30,8 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
     Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
 
 	Status : ${isOwner ? 'Owner' : isPremium ? 'Premium' : 'Free'}
-	Limit Harian : ${isOwner ? '-' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
-	Limit Game : ${isOwner ? '-' : cekGLimit(sender, gcount, glimit)}
+	Limit Harian : ${isOwner ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+	Limit Game : ${cekGLimit(sender, gcount, glimit)}
 	Balance : $${toCommas(getBalance(sender, balance))}
   
   _Ada Bug? Ketik ${prefix}report Bug mu_
@@ -44,7 +44,6 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}runtime
   ≻ ${prefix}cekprem
   ≻ ${prefix}listprem
-  ≻ ${prefix}jo <Text>
   ≻ ${prefix}simi <Text>
 
   *Converter/Tools*
@@ -52,7 +51,7 @@ exports.allmenu = (sender, prefix, pushname, isOwner, isPremium, balance, limit,
   ≻ ${prefix}toimg <ReplyStiker>
   ≻ ${prefix}tovid <ReplyStiker>
 
-  *Downloader*
+  *Downloader* [ERROR]
   ≻ ${prefix}play <Querry>
   ≻ ${prefix}tiktok <LinkTt>
   ≻ ${prefix}tiktokaudio <LinkTt>
