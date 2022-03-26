@@ -1080,7 +1080,7 @@ Cek Pintar : ${pinter}%
 Menyukai : ${gai}
   `
 var but = [{buttonId: '/y', buttonText: { displayText: 'Cocok' }, type: 1 }, {buttonId: '/n', buttonText: { displayText: 'Gak Cocok' }, type: 1 }]
-					conn.sendMessage(from, { caption: cek, image: { url: `https://telegra.ph/file/a48660964fc598016dc71.png` }, buttons: but, footer: '© HanBotzBot' }, { quoted: msg })
+					conn.sendMessage(from, { caption: cek, image: { url: `https://telegra.ph/file/a48660964fc598016dc71.png` }, buttons: but, footer: '© HanBotz' }, { quoted: msg })
 				    limitAdd(sender, limit)
 				    break
 case prefix+'y':
@@ -1831,7 +1831,7 @@ case prefix+'darkjokes': case prefix+'dark': case prefix+'darkjoke':
   if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
   var but = [{buttonId: `${command}`, buttonText: { displayText: "Dark Jokes" }, type: 1 }]
   var data = await fetchJson(`https://hadi-api.herokuapp.com/api/darkjokes`)
-				conn.sendMessage(from, { caption: "© Hadi Api & Arasya", image: { url: data.result }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
+				conn.sendMessage(from, { caption: "© HanBotz", image: { url: data.result }, buttons: but, footer: 'Pencet tombol dibawah untuk foto selanjutnya' }, { quoted: msg })
 limitAdd(sender, limit)
 break
 case prefix+'readmore':
@@ -1853,7 +1853,7 @@ case prefix+'wiki':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
     reply(mess.wait)
      var data = await fetchJson(`https://hadi-api.herokuapp.com/api/wiki?query=${q}`)
-    var captionnya = `${data.result}\n\n${readmore} *© HanBotzBOT*`
+    var captionnya = `${data.result}\n\n${readmore} *© HanBotz*`
     conn.sendMessage(from, {caption: captionnya, image: {url: `https://telegra.ph/file/b4a72e6438af9770300eb.jpg`}}, {quoted: msg})
     limitAdd(sender, limit)
     break
@@ -1862,7 +1862,7 @@ case prefix+'igstalk':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
     if (args.length < 2) return reply(`Kirim perintah ${command} Username\nContoh : ${command} sofunsyabi.jpg`)
     var data = await fetchJson(`https://hardianto.xyz/api/igstalk?username=${q}&apikey=hardianto`)
-    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *© HanBotzBOT*`
+    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *© HanBotz*`
     conn.sendMessage(from, {caption: caption, image: {url: data.thumbnail}}, {quoted: msg})
     limitAdd(sender, limit)
     break
@@ -2080,10 +2080,10 @@ case prefix+'react':
 			default:
 			if (isGroup && isCmd) {
 				var but = [{buttonId: `/menu`, buttonText: { displayText: "MENU" }, type: 1 }]
-conn.sendMessage(from, { text: "Maaf Command Belum Tersedia", buttons: but, footer: "Lihat Lebih Di Menu", templateButtons: but }, {quoted: msg})
+conn.sendMessage(from, { text: "Maaf Command Tidak Ada Di Menu", buttons: but, footer: "Lihat Lebih Di Menu", templateButtons: but }, {quoted: msg})
 			}
 			if (!isGroup && isCmd) {
-				reply("Maaf Command Belum Tersedia, Coba Beberapa Hari Kedepan Ya_^")
+				reply("Maaf Command Tidak Ada Di Menu")
 			}
 		}
 	} catch (err) {
