@@ -235,7 +235,6 @@ module.exports = async(conn, msg, m, setting) => {
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+6285731855426` } },
 		const buttonsDefault = [
 			{ urlButton: { displayText: `GRUP HANBOTZ`, url : `https://chat.whatsapp.com/IKcqBMcirblBbc9SqpKuPu` } },
-			{ urlButton: { displayText: `Youtube Channel`, url : `https://youtube.com/channel/UCZzt-Qw0zTYc8UP-LL2G5fA` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Pemilik Bot`, id: `${prefix}owner` } },
 			{ quickReplyButton: { displayText: `Info Bot`, id: `${prefix}infobot` } },
@@ -337,7 +336,7 @@ if (chats.startsWith("woy")){
 			// Main Menu
 			case prefix+'menu':
 			case prefix+'help':
-			  conn.sendMessage(from, { audio: fs.readFileSync('audio/WindahBengsin.m4a'), mimetype: 'audio/mp4', ptt: true}, {quoted: msg})
+			  
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
 conn.sendMessage(from, { caption: teks, image: {url: `https://telegra.ph/file/2ccdf8db25ccc78e75df8.jpg`}, templateButtons: buttonsDefault, footer: '© HanBotz', mentions: [sender]} )
@@ -405,8 +404,8 @@ case prefix+'infobot':
     case prefix+'info':
       var caption = `*[ INFO HANBOTZ ]*
 
-*Nama Bot :* Jojo
-*Name Owner :* Arasya
+*Nama Bot :* HanBotz
+*Name Owner :* Han
 *Nomor Bot :* wa.me/6285807149213
 *Nomor Owner :* wa.me/6285731855426
 *Engine :* NodeJs
